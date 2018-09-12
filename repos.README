@@ -1,0 +1,32 @@
+#Explicación de UML
+##Lógica: en esta clase de harán las interacciones e interpretaciones 
+**Métodos**
+encontrarMayusculas: este método me recorrerá los string del archivo de texto buscando la letras mayúsculas del texto, posiblemente con un con condicional, posteriormente  me inserte a un arreglo  dichas letras.
+pintarMayusculas: recorre el arreglo, y me llama el método pintar de la clase pandereta.
+interaccionPandereta: este método me agrega un asterisco (*) después de la letra mayúscula y  guarda esta modificación en un nuevo arreglo que se verá reflejado en un txt diferente.
+EncontrarP: este método me recorre los string del archivo de texto y me evalúa si la primera letra de cada palabra, es decir la letra en la posición 0 es la “p” y me las va guardando en un arreglo.
+pintarGuitarra: por cada una “p” guardada en el arreglo me llama al método pintar de la clase guitarra.
+interaccionGuitarra: a estas letras que comienzan por “p” me las invierte y me las guarda en un nuevo txt.
+encontrarNumero: aquí se me va a evaluar dentro de todo el archivo de texto las palabras que contengan números y se me van a añadir a un arreglo.
+pintarBateria: me recorre dicho arreglo y me va llamando el método pintar de la clase batería por cada posición.
+numeroDisminuye:en este método se modifica el arreglo de números encontrados en el texto y me disminuye una unidad para cada una de las posiciones, a su vez, esto se verá reflejado en un txt diferente.
+todasLasA, todasLasE, todasLasI, todasLasO, todasLasU: estos métodos realizan la misma función pero con diferente vocal. Cada uno de ellos debe encontrar su respectiva vocal en el texto e irla añadiendo al arreglo, así, habrá un arreglo de letras A, otro de E, etc.
+pintarA, pintarE, pintarI, pintarO, pintarU: me recorren  los arreglo de vocales, en cada una de las posiciones me llama el método pintar de Xilófono.
+presionarTeclaA,  presionarTeclaE, presionarTeclaI,  presionarTeclaO, presionarTeclaU:   la función de estos métodos es, que cada uno de manera aleatoria selecciona una posición del arreglo y me la elimina del mismo.
+EncontrarUna: me recorre el arreglo de strings del archivo de texto y me evalúa cuantas veces esta la palabra “Una” y me la va agregando a un arreglo.
+pintarPiano:por cada una de las veces que este dicha palabra se me va a llamar al método pintar de la clase Piano.
+InteraccionPiano: escoge una palabra random del arreglo y me la cambia por “1”
+encontrarLetrasRepetidas: me hace un recorrido al archivo de texto en busca de las palabras que tengan alguna letra repetida, a su vez me va agregando cada una de estas letras en un arreglo.
+pintarMaracas: me llama al método pintar de la clase Maraca
+interaccionMaraca: tiene un random que me selecciona una de las letras repetidas y me la elimina
+moverMaraca: accede a la posiciones de la clase maraca y me las modifica
+evaluarDosLetras: me evalúa las palabras que tiene dos letras dentro de todo el archivo de texto y me las adicionas a un arreglo
+pintarTriangulo: me llama al método pintar de la clase Triangulo por cada posición del arreglo
+caerTriangulo: accede a la posición y de la clase maraca y me le resta una cantidad
+interaccionTriangulo: en el arreglo de palabras de dos letras se me va a eliminar la primera posición
+encontrarComa: me encuentra todas las comas del texto y me las va adicionando a un arreglo
+pintarFlauta: por cada posición del arreglo se me va a llamar al método pintar de la clase flauta
+interaccionFlauta: aquí se llama el método cambiar color de la clase Flauta
+Para los arreglos no defino un tamaño exacto en los métodos porque la cantidad me será dada al utilizar un contador.
+##Para las clases Flauta, xilófono, Bateria, Triangulo, Maraca, Guitarra, Pandereta y Piano habrá:##
+Su respectivo constructor y un método pintar en el cual se me va a pintar la figura correspondiente. Para algunas de esas clases se hizo el método cambiarColor en el cual se utilizara un fill de un color random.
